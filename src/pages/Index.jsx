@@ -16,7 +16,7 @@ export default function Index() {
                 {album.map((each, i) => {
                     return(
                         <div className="albumsDisplay" key={i}>
-                            <a href={`/${each._id}`}><h3>each.title</h3></a>
+                            <a href={`/${each._id}`}><h3>{each.title}</h3></a>
                             <h4>Artist: {each.artist} <br/>
                             Year: {each.year} <br/>
                             Genre: {each.genre}</h4>
