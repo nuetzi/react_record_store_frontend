@@ -3,14 +3,14 @@ import { createItem } from "../services/APIFunctions";
 
 export default function Create() {
     const navigate = useNavigate();
-    const makeNewItem = e => {
+    const createAlbum = e => {
         e.preventDefault();
         const newItem = {
-            title: document.querySelector("#title").value,
-            artist: document.querySelector("#artist").value,
-            year: document.querySelector("#year").value,
-            genre: document.querySelector("#genre").value,
-            image: document.querySelector("#img").value
+            title: e.target.title.value,
+            artist: e.target.artist.value,
+            year: e.target.year.value,
+            genre: e.target.genre.value,
+            image: e.target.image.value
         };
         createItem(newItem);
         navigate("/");
@@ -19,12 +19,12 @@ export default function Create() {
     return(
         <div>
             <h4>Add a New Album</h4>
-            <form onSubmit={makeNewItem}>
-                Title: &nbsp; <input type="text" name="title" id="title"/> <br/>
-                Artist: &nbsp; <input type="text" name="artist" id="artist"/> <br/>
-                Year: &nbsp; <input type="number" name="year" id="year"/> <br/>
-                Genre: &nbsp; <input type="text" name="genre" id="genre"/> <br/>
-                Image URL: &nbsp; <input type="text" name="image" id="img"/> <br/>
+            <form onSubmit={createAlbum}>
+                Title: &nbsp; <input type="text" name="title" /> <br/>
+                Artist: &nbsp; <input type="text" name="artist" /> <br/>
+                Year: &nbsp; <input type="number" name="year" /> <br/>
+                Genre: &nbsp; <input type="text" name="genre" /> <br/>
+                Image URL: &nbsp; <input type="text" name="image" /> <br/>
                 <input type="submit" />
             </form>
         </div>
