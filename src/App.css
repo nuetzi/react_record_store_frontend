@@ -1,11 +1,14 @@
 body {
   text-align: center;
+  background-color: #70798c;
+  color: #252323;
 }
 
 img {
-  border: 2px solid black;
+  border: 2px solid #252323;
   border-radius: 5px;
   max-width: 75%;
+  max-height: 65%;
 }
 
 .albumContainer {
@@ -16,6 +19,22 @@ img {
 }
 
 .albumsDisplay {
-  border: 3px solid black;
+  border: 3px solid #252323;
   border-radius: 10px;
+  color: #252323;
+  background-color: #dad2bc;
+}
+
+.showAlbum {
+  border: 3px solid #252323;
+  color: #252323;
+  background-color: #dad2bc;
+  border-radius: 10px;;
+  width: 40%;
+  margin: auto;
+  padding: 15px;
+}
+
+.showAlbum img {
+  max-height: 500px;
 }

@@ -18,11 +18,10 @@ export default function Show() {
 
     return(
         <div className="showAlbum">
-            <h2>Album:</h2>
-            <h3>"{album.title}" <br/>
-            by {album.artist}</h3>
-            <h5>Year: {album.year} <br/>
-            Genre: {album.genre}</h5>
+            <h2>{album.title} </h2>
+            <h3>by {album.artist}</h3>
+            <h4>Year: {album.year} <br/>
+            Genre: {album.genre}</h4>
             <img src={album.image} />
             <br/>
             <br/>

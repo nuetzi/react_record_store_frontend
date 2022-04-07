@@ -15,6 +15,7 @@ export default function App() {
       </nav>
       <br/>
       <h1>React Record Store</h1>
+      <br/>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/create" element={<Create />} />
