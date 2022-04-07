@@ -1,3 +1,21 @@
-.App {
+body {
   text-align: center;
+}
+
+img {
+  border: 2px solid black;
+  border-radius: 5px;
+  max-width: 75%;
+}
+
+.albumContainer {
+  margin: 1%;
+  display: grid;
+  gap: 1%;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.albumsDisplay {
+  border: 3px solid black;
+  border-radius: 10px;
 }

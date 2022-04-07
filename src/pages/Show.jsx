@@ -19,12 +19,15 @@ export default function Show() {
     return(
         <div className="showAlbum">
             <h2>Album:</h2>
-            <h3>"{album.title}" by {album.artist}</h3>
+            <h3>"{album.title}" <br/>
+            by {album.artist}</h3>
             <h5>Year: {album.year} <br/>
             Genre: {album.genre}</h5>
             <img src={album.image} />
             <br/>
-            <button onClick={() => {navigate(`/${id}/edit`)}}>EDIT</button>
+            <br/>
+            <button onClick={() => {navigate(`/${id}/edit`)}}>EDIT</button> <br/>
+            <br/>
             <button onClick={deleteAlbum}>DELETE</button>
         </div>
     );

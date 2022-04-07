@@ -20,7 +20,7 @@ export default function Index() {
                             <h4>Artist: {each.artist} <br/>
                             Year: {each.year} <br/>
                             Genre: {each.genre}</h4>
-                            <img src={each.image} />
+                            <a href={`/${each._id}`}><img src={each.image} /></a>
                         </div>
                     );
                 })}
