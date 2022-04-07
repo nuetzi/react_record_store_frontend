@@ -29,11 +29,11 @@ export default function Edit() {
         <div>
             <h2>Edit Album</h2>
             <form onSubmit={editAlbum}>
-                Title: &nbsp; <input type="text" name="title" /> <br/>
-                Artist: &nbsp; <input type="text" name="artist" /> <br/>
-                Year: &nbsp; <input type="number" name="year" /> <br/>
-                Genre: &nbsp; <input type="text" name="genre" /> <br/>
-                Image URL: &nbsp; <input type="text" name="image" /> <br/>
+                Title: &nbsp; <input type="text" name="title" defaultValue={album.title} /> <br/>
+                Artist: &nbsp; <input type="text" name="artist" defaultValue={album.artist} /> <br/>
+                Year: &nbsp; <input type="number" name="year" defaultValue={album.year} /> <br/>
+                Genre: &nbsp; <input type="text" name="genre" defaultValue={album.genre} /> <br/>
+                Image URL: &nbsp; <input type="text" name="image" defaultValue={album.image} /> <br/>
                 <input type="submit" />
             </form>
         </div>
