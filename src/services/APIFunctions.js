@@ -1,5 +1,5 @@
 import axios from "axios";
-const URL = "http://localhost:3001/recordstore";
+const URL = "http://localhost:3001/records/";
 
 export function getIndex () {
     const response = axios.get(URL);
@@ -7,21 +7,21 @@ export function getIndex () {
 };
 
 export function getItem(id) {
-    const response = axios.get(`${URL}/${id}`);
+    const response = axios.get(`${URL}${id}`);
     return response;
 };
 
 export function deleteItem(id) {
-    const response = axios.delete(`${URL}/${id}`);
+    const response = axios.delete(`${URL}${id}`);
     return response;
 };
 
-export function createItem(id) {
-    const response = axios.post(URL, id);
+export function createItem(createdItem) {
+    const response = axios.post(URL, createdItem);
     return response;
 };
 
 export function editItem(id, updatedItem) {
-    const response = axios.put(`${URL}/${id}`, updatedItem);
+    const response = axios.put(`${URL}${id}`, updatedItem);
     return response;
 };

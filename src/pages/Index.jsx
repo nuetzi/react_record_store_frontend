@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { getItem } from "../services/APIFunctions";
+import { getIndex } from "../services/APIFunctions";
 
 export default function Index() {
     const [album, setAlbum] = useState([]);
 
     useEffect(() => {
-        getItem()
+        getIndex()
         .then(res => setAlbum(res.data))
     }, []);
 
