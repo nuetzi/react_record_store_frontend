@@ -1,5 +1,5 @@
 import axios from "axios";
-const URL = "http://localhost:3001/records/";
+const URL = "https://nuetzi-records-backend.herokuapp.com/records/";
 
 export function getIndex () {
     const response = axios.get(URL);
